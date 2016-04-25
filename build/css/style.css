@@ -1,3 +1,18 @@
 /* --- Variables ---*/
 /* --- Globals ---*/
 /* --- Styles --- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px; }
+
+#colour-block {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black; }
+
+input[type=range] {
+  display: block; }
+
+.disclaimer {
+  margin-top: 2rem; }
