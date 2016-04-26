@@ -34,16 +34,13 @@ var Slider = React.createClass({
       m = 0;
       y = 0;
       k = 100;
-      console.log(c, m, y, k);
-      colourArray = [c, m, y, k];
     } else {
       c = Math.round( c * 100 );
       m = Math.round( m * 100 );
       y = Math.round( y * 100 );
       k = Math.round( k * 100 );
-      console.log(c, m, y, k);
-      colourArray = [c, m, y, k];
     }
+    colourArray = [c, m, y, k];
   },
   render: function() {
     var styles = {
@@ -51,7 +48,7 @@ var Slider = React.createClass({
     };
     {this._convertCMYK(this.state.red,this.state.green,this.state.blue)}
     return (
-      <div>
+      <div className="content">
         <input id="red"
           type="range"
           min="0"
@@ -83,12 +80,6 @@ var Slider = React.createClass({
           <li>Y: {colourArray[2]}</li>
           <li>K: {colourArray[3]}</li>
         </ul>
-        <div className="disclaimer">
-          <p>
-            CMYK Colour values and swatches are for reference only.
-            Please work with your printer to ensure colour accuracy!
-          </p>
-        </div>
       </div>
     );
 
