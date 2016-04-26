@@ -6,7 +6,7 @@ import Slider from './components/slider.jsx';
 var ColourSlide = React.createClass({
   render: function() {
     return (
-      <section className="wrapper">
+      <div className="wrapper">
         <header className="content">
           <h1>Simple RGB - CMYK Converter</h1>
         </header>
@@ -19,7 +19,7 @@ var ColourSlide = React.createClass({
               Please work with your printer to ensure colour accuracy!
             </p>
           </footer>
-      </section>
+      </div>
     );
   }
 });

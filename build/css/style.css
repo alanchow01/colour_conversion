@@ -14,39 +14,57 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, white 25%, rgba(255, 255, 255, 0) 100%), url("../images/polygons.jpg") no-repeat 50% 200px;
+  background-size: cover, cover, cover; }
 
 .wrapper {
-  background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, white 25%, rgba(255, 255, 255, 0) 100%), url("../images/polygons.jpg") no-repeat 50% 200px;
-  background-size: cover, cover, cover;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  max-width: 480px;
+  margin: 0 auto; }
 
 .content {
   padding-top: 3rem;
   text-align: center; }
 
-#colour-block {
-  border: 1px solid black;
+.swatch {
+  box-shadow: 2px 2px 8px 0 rgba(127, 127, 127, 0.75);
+  background: #fff;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  text-align: center;
+  width: 18rem; }
+
+.colour-block {
+  border: 1px solid #aaa;
   height: 15rem;
-  margin: 3rem auto 1rem;
+  margin: 0 auto;
   width: 15rem; }
 
 input[type=range] {
   display: block;
-  margin: 0 auto;
   width: 75%;
+  margin: 0 auto .5rem;
   max-width: 480px; }
+  input[type=range]:nth-child(n+2) {
+    margin-top: 1.5rem; }
+
+.cmyk-breakdown {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  .cmyk-breakdown li {
+    display: inline;
+    padding-right: 1rem; }
+    .cmyk-breakdown li:last-child {
+      padding-right: 0; }
 
 .disclaimer {
   bottom: 0;
+  font-size: .85rem;
+  left: 0;
   position: absolute;
-  text-align: center;
   width: 100%;
+  text-align: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
-
-.cmyk-breakdown li {
-  display: inline;
-  padding-right: 1rem; }
