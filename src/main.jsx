@@ -15,7 +15,7 @@ var ColourSlide = React.createClass({
 
           <footer className="disclaimer">
             <p>
-              CMYK Colour values and swatches are for reference only.<br />
+              Use the generated CMYK colour values as a guide only.<br />
               Please work with your printer to ensure colour accuracy!
             </p>
           </footer>
