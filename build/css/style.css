@@ -17,30 +17,32 @@ body {
   line-height: 1.5; }
 
 .wrapper {
-  background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%), url("../images/polygons.jpg") no-repeat 0 400px;
-  background-size: cover, cover;
+  background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, white 25%, rgba(255, 255, 255, 0) 100%), url("../images/polygons.jpg") no-repeat 50% 200px;
+  background-size: cover, cover, cover;
   margin: 0 auto;
-  text-align: center;
   width: 100vw;
   height: 100vh; }
 
 .content {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  text-align: center; }
 
 #colour-block {
   border: 1px solid black;
-  height: 200px;
+  height: 15rem;
   margin: 3rem auto 1rem;
-  width: 200px; }
+  width: 15rem; }
 
 input[type=range] {
   display: block;
   margin: 0 auto;
-  width: 75%; }
+  width: 75%;
+  max-width: 480px; }
 
 .disclaimer {
   bottom: 0;
   position: absolute;
+  text-align: center;
   width: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
