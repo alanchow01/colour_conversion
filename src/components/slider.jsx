@@ -1,6 +1,5 @@
 import React from 'react';
 
-var colourArray;
 var Slider = React.createClass({
   getInitialState: function() {
     return {
@@ -19,7 +18,6 @@ var Slider = React.createClass({
     this.setState({blue:e.target.value})
   },
   _convertCMYK: function() {
-
     var r = this.state.red / 255;
     var g = this.state.green / 255;
     var b = this.state.blue / 255;
@@ -43,7 +41,7 @@ var Slider = React.createClass({
     return [c, m, y, k];
   },
   _convertHEX: function() {
-    return "#" + ((1<<24) + Math.round(this.state.red << 16) + Math.round(this.state.green << 8) + Math.round(this.state.blue)).toString(16).slice(1).toUpperCase();
+    return "#" + ((1<<24) + parseInt(this.state.red << 16) + parseInt(this.state.green << 8) + parseInt(this.state.blue)).toString(16).slice(1).toUpperCase();
   },
   render: function() {
     var styles = {
