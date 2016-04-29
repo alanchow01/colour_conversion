@@ -29,7 +29,7 @@ var Slider = React.createClass({
     var m = ( 1 - g - k ) / ( 1 - k );
     var y = ( 1 - b - k ) / ( 1 - k );
 
-    if(r==0 && g==0 && b==0) {
+    if(r===0 && g===0 && b===0) {
       c = 0;
       m = 0;
       y = 0;
@@ -40,10 +40,12 @@ var Slider = React.createClass({
       y = Math.round( y * 100 );
       k = Math.round( k * 100 );
     }
-    colourArray = [c, m, y, k];
+    return [c, m, y, k];
+  },
+  _convertHEX: function() {
+    return "#" + ((1<<24) + Math.round(this.state.red << 16) + Math.round(this.state.green << 8) + Math.round(this.state.blue)).toString(16).slice(1).toUpperCase();
   },
   render: function() {
-    {this._convertCMYK()}
     var styles = {
       background: 'rgb(' + this.state.red + ',' + this.state.green + ',' + this.state.blue + ')'
     }
@@ -81,10 +83,14 @@ var Slider = React.createClass({
         <div className="swatch">
           <div className="colour-block" style={styles}></div>
           <ul className="cmyk-breakdown">
-            <li>C: {colourArray[0]}</li>
-            <li>M: {colourArray[1]}</li>
-            <li>Y: {colourArray[2]}</li>
-            <li>K: {colourArray[3]}</li>
+            <li>C: {this._convertCMYK()[0]}</li>
+            <li>M: {this._convertCMYK()[1]}</li>
+            <li>Y: {this._convertCMYK()[2]}</li>
+            <li>K: {this._convertCMYK()[3]}</li>
+          </ul>
+          <ul className="hex-breakdown">
+            <li>rgb({this.state.red + ', ' + this.state.green + ', ' + this.state.blue})</li>
+          <li>{this._convertHEX()}</li>
           </ul>
         </div>
       </div>

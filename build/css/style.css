@@ -19,7 +19,7 @@ body {
   background-size: cover, cover, cover; }
 
 .wrapper {
-  height: 100vh;
+  height: 100%;
   max-width: 480px;
   margin: 0 auto; }
 
@@ -32,15 +32,15 @@ body {
   background: #fff;
   border: 1px solid #aaa;
   margin: 0 auto;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   text-align: center;
-  width: 18rem; }
+  width: 20rem; }
 
 .colour-block {
   border: 1px solid #aaa;
-  height: 15rem;
+  height: 16rem;
   margin: 0 auto;
-  width: 15rem; }
+  width: 16rem; }
 
 input[type=range] {
   display: block;
@@ -51,21 +51,18 @@ input[type=range] {
     margin-top: 1.5rem; }
 
 .cmyk-breakdown {
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
+  padding-top: 1rem; }
   .cmyk-breakdown li {
     display: inline;
     padding-right: 1rem; }
     .cmyk-breakdown li:last-child {
       padding-right: 0; }
 
+.hex-breakdown {
+  padding-bottom: 2rem; }
+
 .disclaimer {
-  bottom: 0;
   font-size: .85rem;
-  left: 0;
-  margin-bottom: 1rem;
-  position: absolute;
+  margin: 3rem 0;
   width: 100%;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  text-align: center; }

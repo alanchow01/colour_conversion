@@ -8,7 +8,7 @@ var ColourSlide = React.createClass({
     return (
       <div className="wrapper">
         <header className="content">
-          <h1>Simple RGB - CMYK Converter</h1>
+          <h1>RGB - HEX - CMYK Converter</h1>
         </header>
 
         <Slider/>
