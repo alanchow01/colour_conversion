@@ -1,9 +1,11 @@
 /* --- Variables ---*/
-@import "mixins";
+//@import "mixins";
+@import "variables";
 
 /* --- Globals ---*/
-@import "globals";
+//@import "globals";
 
 /* --- Styles --- */
-@import "fonts";
 @import "body";
+@import "fonts";
+@import "slider";

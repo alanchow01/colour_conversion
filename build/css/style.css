@@ -1,19 +1,19 @@
 /* --- Variables ---*/
 /* --- Globals ---*/
 /* --- Styles --- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
-
-h1 {
-  font-size: 2rem; }
-
 * {
   box-sizing: border-box; }
 
-body {
+html {
+  font-size: 28px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  line-height: 2; }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 18px; } }
+
+body {
   line-height: 1.5;
   background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, white 25%, rgba(255, 255, 255, 0) 100%), url("../images/polygons.jpg") no-repeat 50% 200px;
   background-size: cover, cover, cover; }
@@ -21,7 +21,6 @@ body {
 .wrapper {
   min-height: 100vh;
   max-height: 100%;
-  max-width: 480px;
   margin: 0 auto; }
 
 .content {
@@ -45,11 +44,14 @@ body {
 
 input[type=range] {
   display: block;
-  width: 75%;
-  margin: 0 auto .5rem;
-  max-width: 480px; }
+  width: 100%;
+  margin: 0 auto 2rem;
+  max-width: 600px; }
   input[type=range]:nth-child(n+2) {
-    margin-top: 1.5rem; }
+    margin-top: 4rem; }
+  @media screen and (min-width: 1000px) {
+    input[type=range]:nth-child(n+2) {
+      margin-top: 2rem; } }
 
 .cmyk-breakdown {
   padding-top: 1rem; }
@@ -63,7 +65,110 @@ input[type=range] {
   padding-bottom: 2rem; }
 
 .disclaimer {
-  font-size: .85rem;
+  font-size: 1rem;
   margin: 3rem 0;
   width: 100%;
   text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+h1 {
+  font-size: 2rem; }
+
+[type=range] {
+  -webkit-appearance: none;
+  margin: 37.5px 0;
+  width: 100%; }
+  @media screen and (min-width: 1000px) {
+    [type=range] {
+      margin: 15px 0; } }
+  [type=range]:focus {
+    outline: none; }
+  [type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    transition: all .2s ease;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(255, 255, 255, 0);
+    background: #999;
+    border: 1px solid #999;
+    border-radius: 5px; }
+  [type=range]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 #fff, 0 0 0 white;
+    border: 5px solid #36ADFF;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -38px; }
+    @media screen and (min-width: 1000px) {
+      [type=range]::-webkit-slider-thumb {
+        height: 30px;
+        width: 30px; } }
+    @media screen and (min-width: 1000px) {
+      [type=range]::-webkit-slider-thumb {
+        margin-top: -15.5px; } }
+  [type=range]:focus::-webkit-slider-runnable-track {
+    background: #a6a6a6; }
+  [type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    transition: all .2s ease;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(255, 255, 255, 0);
+    background: #999;
+    border: 1px solid #999;
+    border-radius: 5px; }
+  [type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 #fff, 0 0 0 white;
+    border: 5px solid #36ADFF;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer; }
+    @media screen and (min-width: 1000px) {
+      [type=range]::-moz-range-thumb {
+        height: 30px;
+        width: 30px; } }
+  [type=range]::-ms-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    transition: all .2s ease;
+    background: transparent;
+    border-color: transparent;
+    border-width: 75px 0;
+    color: transparent; }
+    @media (min-width: 1000px) {
+      [type=range]::-ms-track {
+        border-width: 30px 0; } }
+  [type=range]::-ms-fill-lower {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(255, 255, 255, 0);
+    background: #8c8c8c;
+    border: 1px solid #999;
+    border-radius: 10px; }
+  [type=range]::-ms-fill-upper {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(255, 255, 255, 0);
+    background: #999;
+    border: 1px solid #999;
+    border-radius: 10px; }
+  [type=range]::-ms-thumb {
+    box-shadow: 0 0 0 #fff, 0 0 0 white;
+    border: 5px solid #36ADFF;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer; }
+    @media screen and (min-width: 1000px) {
+      [type=range]::-ms-thumb {
+        height: 30px;
+        width: 30px; } }
+  [type=range]:focus::-ms-fill-lower {
+    background: #999; }
+  [type=range]:focus::-ms-fill-upper {
+    background: #a6a6a6; }
