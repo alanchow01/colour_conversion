@@ -1,0 +1,119 @@
+input[type=range] {
+    border: 1px solid white;
+    width: 90%;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #dbdbdb;
+  border: none;
+  border-radius: 5px;
+  height: 7px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: #ec407a;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-top: -11px;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #81d4fa;
+}
+
+.sliderVals {
+  margin-bottom: 3rem;
+}
+
+/* --- Firefox styles --- */
+input[type=range]::-moz-range-track {
+  background: #dbdbdb;
+  border: none;
+  border-radius: 5px;
+  height: 7px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background: #ec407a;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #81d4fa;
+}
+/* --- End Firefox Styles --- */
+
+/* --- IE Styles --- */
+input[type=range]::-ms-trak {
+  height: 5px;
+  background: transparent; // removes colour from track, will use ms-fill-lower and upper
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #dbdbdb;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+  background: #ec407a;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #81d4fa;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #dbdbdb;
+}
+/* --- End IE Styles --- */
+
+@media screen and (min-width: 900px) {
+  input[type=range] {
+      width: 50%;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 3px;
+    height: 5px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  margin-top: -6px;
+  }
+
+  /* --- Firefox styles --- */
+  input[type=range]::-moz-range-track {
+    height: 5px;
+    border-radius: 3px;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+  }
+  /* --- End Firefox Styles --- */
+
+}

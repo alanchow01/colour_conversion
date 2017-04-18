@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import Sliders from './sliders.js';
+
 import '../styles/App.css';
 
-class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Colours!</h2>
+          <h2>Colours</h2>
         </div>
         <p className="App-intro">
-          A simple app that converts RGB values to CMYK and HEX values.
+        A simple app that converts RGB values to CMYK and HEX values.
         </p>
+        <Sliders />
       </div>
     );
   }
 }
-
-export default App;
