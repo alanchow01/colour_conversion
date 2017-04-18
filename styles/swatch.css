@@ -1,0 +1,24 @@
+.swatchBox {
+  font-size: .85rem;
+  border: 1px solid #ddd;
+  padding: 15px 15px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.swatch {
+  border: 1px solid #ddd;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.cmykBreakdown {
+  list-style: none;
+  margin-left: -2.5rem;
+}
+
+.cmykBreakdown li {
+  display: inline-block;
+  padding: 0 0.35rem;
+}
