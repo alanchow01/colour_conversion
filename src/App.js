@@ -11,7 +11,7 @@ export default class App extends React.Component {
           <h2>Colours</h2>
         </div>
         <p className="App-intro">
-        A simple app that converts RGB values to CMYK and HEX values.
+        A simple tool that converts RGB values to CMYK and HEX values.
         </p>
         <Sliders />
       </div>

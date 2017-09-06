@@ -1,4 +1,4 @@
-input[type=range] {
+  input[type=range] {
     border: 1px solid white;
     width: 90%;
     -webkit-appearance: none;
@@ -32,6 +32,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .sliderVals {
   margin-bottom: 3rem;
+}
+
+input[type=number] {
+  font-size: 1rem;
 }
 
 /* --- Firefox styles --- */
